@@ -1,4 +1,4 @@
-------------EX 22----------------
+#------------EX 22----------------
 #------------CICLO FOR-----------------
 
 #enquanto que os ciclos WHILE correm infinitamente, o ciclo FOR existe para quando queremos controlar a QUANTIDADE DE ITERAÇÕES (repetições) que faz.
@@ -23,7 +23,33 @@ for x in "TESTE": #aqui, dá-se a avaliação da condição, ou seja, a variáve
 # para tal, basta indicarmos o comando BREAK!
 # de modo a inserir esta instrução, devemos indicar as condições sob as quais o nosso ciclo deve parar!
 #por exemplo:
+
 for v in "SHARKCODERS": #aqui, a VARIÁVEL DE ITERAÇÃO VAI PERCORRER A PALAVRA
     print(v)
     if v=="O": #inserimos a condição de quebra
         break  #mandamos o ciclo parar, ou seja, interrompemos
+
+#---------FUNÇÃO RANGE()----------------
+
+# o ciclo FOR pode incluir funções que determinam a quantidade de vezes que se vai repetir (QUANTIDADE DE ITERAÇÕES)
+#a função range() tem exatamente esse propósito.
+#dentro dos parêntesis, podemos incluir apenas um parâmetro/argumeno que, neste caso, seria um número que por sua vez irá controlar as repetições do ciclo
+#o que acontece é que a variável de iteração percorrerá essa contagem a partir do 0
+# TODAS AS CONTAGENS EM PYTHON COMEÇAM A PARTIR DO ZERO (0)
+
+#a estrutura será a seguinte:
+
+for x in range(6): #aqui, a variável de iteração percorrerá uma contagem de 6 (a começar do 0)
+    print(x) #vão ocorrer 6 prints até ao ciclo terminar, ou seja, do 0 ao 5
+
+#também podemos incluir dois argumentos/parâmetros.
+#isto implica que determinamos um número inicial para a sequência e um número final, contando desde o primeiro número até ao útlimo que definirmos
+#no entanto, a contagem vai ocorrer até ao número anterior ao número do segundo parâmetro
+
+for u in range(2,8): #aqui temos uma contagem do 2 ao 8, ou seja, 6 números entre eles
+    print(u) #vão ocorrer 6 iterações, ou seja, do 2 ao 7
+
+#podemos, ainda, adicionar mais um argumento. este argumento indica o valor de INCREMENTO, ou seja, DE QUANTO EM QUANTO ESTAMOS A CONTAR!
+
+for b in range(2,20,2): #aqui, o primeiro argumento é o número de início da contagem, o segundo argumento é até onde vamos contar, e o terceiro argumento é de quanto em quanto vamos contar
+    print(b, end="") #aqui, adicionamos a função END para que o resultado apareça na horizontal e não na vertical
